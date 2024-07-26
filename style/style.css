@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+    font-family: Regular;
+    background-image: url("../assets/images/pexels-felixmittermeier-1146134.jpg");
+    background-size:cover;
+}
+
+.calculator {
+    padding: 20px;
+    width: 370px;
+    border-radius: 12px 12px 100px;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 50px rgba(135, 80, 255, 0.75);
+}
+
+.entries {
+    width: 200px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 17px;
+    margin: 0px 0px 23px 6px;
+}
+
+.card {
+    width: 78px;
+}
+
+.card div:first-child {
+    font-size: 7px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    margin: 7px 0px 4px;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 65px;
+    height: 32px;
+    border: solid 1px hsl(0, 0%, 86%);
+    border-radius: 4px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    transition: .5s;
+}
+
+input:hover{
+    background-color: rgb(255, 255, 255);
+}
+input:focus{
+    background-color: rgb(210, 189, 255);
+}
+
+.error {
+    font-size: 7px;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+    margin-top: 4px;
+}
+
+.separator {
+    display: flex;
+}
+
+.ico {
+    background-color: rgb(133, 77, 255);
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -25px;
+    right: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: 0.5s;
+}
+
+.ico:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+img {
+    width: 25px;
+}
+
+.line {
+    width: 330px;
+    height: 0px;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+.result {
+    display: grid;
+    font-family: ExtraBoldItalic;
+    font-size: 50px;
+    width: 380px;
+}
+
+p {
+    margin: -10px 0px -10px 7px;
+    color: white;
+
+}
+
+.result p:first-child {
+    margin-top: -33px;
+}
+
+#years,#months,#days,#yearsRes,#monthsRes,#daysRes {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 9px;
+    transition: .5s;
+}
+
+#yearsRes,#monthsRes,#daysRes{
+    position: relative;
+    left: -25px;
+}
